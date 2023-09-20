@@ -13,10 +13,7 @@ jobs:
     name: Ansible Lint  # Naming the build is important to use it as a status check
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      # this action implicitly calls actions/checkout
       - name: Run ansible-lint
         uses: ansible/ansible-lint@v6.18.0  # match tag to .pre-commit-config.yaml
 
