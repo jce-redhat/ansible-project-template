@@ -1,0 +1,11 @@
+---
+collections:
+  # from Automation Hub
+  - name: ansible.utils
+    source: https://cloud.redhat.com/api/automation-hub/
+
+  # from Galaxy
+  - name: ansible.posix
+    source: https://galaxy.ansible.com
+
+...

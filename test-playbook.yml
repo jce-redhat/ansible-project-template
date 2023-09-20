@@ -1,0 +1,25 @@
+# Playbook for testing ansible-lint GitHub action, not meant to
+# do anything useful
+---
+- name: Test playbook for ansible-lint GitHub action
+  hosts: localhost
+
+  tasks:
+    - name: Set fact for later update
+      ansible.builtin.set_fact:
+        my_fact:
+          key1: true
+          key2: false
+
+    - name: Use collection pulled from Ansible Galaxy
+      ansible.posix.acl:
+        path: /tmp
+      register: _tmp_dir_acl
+
+    - name: Use collection pulled from Red Hat Automation Hub
+      ansible.utils.update_fact:
+        updates:
+          - path: my_fact.key1
+            value: false
+
+...

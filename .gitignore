@@ -1,0 +1,5 @@
+# https://git-scm.com/docs/gitignore
+#
+**/ansible-navigator.log
+navigator-output/
+collections/ansible_collections/

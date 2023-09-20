@@ -1,0 +1,11 @@
+# https://ansible.readthedocs.io/projects/lint/
+---
+profile: production
+
+skip_list:
+  - "galaxy[no-changelog]"
+
+exclude_paths:
+  - collections/ansible_collections/
+
+...
