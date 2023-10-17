@@ -10,5 +10,10 @@ repos:
     rev: v6.18.0
     hooks:
       - id: ansible-lint
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
 
 ...
