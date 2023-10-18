@@ -8,4 +8,14 @@ collections:
   - name: ansible.posix
     source: https://galaxy.ansible.com
 
+  # from a git repo
+#  - name: https://github.com/ansible-collections/community.general.git
+#    type: git
+#    version: main  # branch or tag to install
+
+  # from local development directory
+#  - name: my.collection
+#    source: ../ansible_collections/my/collection/
+#    type: dir
+
 ...
