@@ -7,7 +7,7 @@ on:
     branches: ["*"]
 
 env:
-  ANSIBLE_GALAXY_SERVER_AH_TOKEN: ${{ secrets.automation_hub_token }}
+  ANSIBLE_GALAXY_SERVER_AUTOMATION_HUB_TOKEN: ${{ secrets.automation_hub_token }}
 
 jobs:
   pre-commit:
