@@ -1,0 +1,21 @@
+---
+name: pre-commit
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: ["*"]
+
+env:
+  ANSIBLE_GALAXY_SERVER_AH_TOKEN: ${{ secrets.automation_hub_token }}
+
+jobs:
+  pre-commit:
+    name: Run pre-commit checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+      - uses: pre-commit/action@v3.0.0
+
+...

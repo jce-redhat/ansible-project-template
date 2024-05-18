@@ -6,7 +6,7 @@ ansible-navigator:
     rotate-artifacts-count: 10
   execution-environment:
     container-engine: podman
-    image: registry.redhat.io/ansible-automation-platform-23/ee-supported-rhel8
+    image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
     pull:
       policy: missing
 #    environment-variables:
