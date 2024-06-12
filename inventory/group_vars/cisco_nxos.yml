@@ -1,0 +1,7 @@
+# https://docs.ansible.com/ansible/latest/network/user_guide/platform_nxos.html
+---
+ansible_connection: ansible.netcommon.httpapi
+ansible_network_os: cisco.nxos.nxos
+ansible_user: nxosuser
+
+...

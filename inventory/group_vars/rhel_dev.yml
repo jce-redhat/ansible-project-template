@@ -1,0 +1,6 @@
+---
+ntp_servers:
+  - ntp1.dev.example.org
+  - ntp2.dev.example.org
+
+...

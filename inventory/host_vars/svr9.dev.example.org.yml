@@ -1,0 +1,7 @@
+---
+# override group ntp_servers variable
+ntp_servers:
+  - ntp3.dev.example.org
+  - ntp4.dev.example.org
+
+...
