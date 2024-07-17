@@ -3,8 +3,13 @@
 extends: default
 
 rules:
+  comments:
+    require-starting-space: false
+    min-spaces-from-content: 1
   comments-indentation: disable
-  line-length: disable
+  line-length:
+    max: 150
+    allow-non-breakable-inline-mappings: true
   trailing-spaces: enable
   colons:
     max-spaces-before: 0
